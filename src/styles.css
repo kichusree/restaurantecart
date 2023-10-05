@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style files */
+#d{
+    transition: .5s ease-in-out;
+   
+}
+#d:hover{
+    transform:scale(1.07);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(206, 32, 32, 0.19);
+}
+
+#k7:hover{
+    transform:scale(1.07);
+    box-shadow: 0 9px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(7, 246, 86, 0.19);
+}

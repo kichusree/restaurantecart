@@ -1,0 +1,70 @@
+
+<div class="container text-center">
+    <div class="container d-flex ms-5">
+        <div  (click)=" filterProducts('')"class="ms-5 ">
+            <a >
+                <!-- <img class="w-25" src="https://i.postimg.cc/yYbtNGNv/all-products-s.webp"alt=""> -->
+                <br>
+                <h4 id ="k7" style="text-decoration: none;color: black;"class="text-center mt-2 ms-5">All Products</h4>
+            </a>
+        </div>
+        <div (click)=" filterProducts('2')" class="ms-5"  href="" >
+            <a >
+                <!-- <img class="w-25" src="https://i.postimg.cc/yYbtNGNv/all-products-s.webp"alt=""> -->
+                <br>
+                <h4 id ="k7" style="text-decoration: none;color: black;"class="text-center  mt-2 ms-5">Fast Food</h4>
+            </a>
+        </div>
+        <div (click)=" filterProducts('3')" class="ms-5">
+            <a >
+                <!-- <img class="w-25" src="https://i.postimg.cc/yYbtNGNv/all-products-s.webp"alt=""> -->
+                <br>
+                <h4 id ="k7" style="text-decoration: none;color: black;"class="text-center mt-2 ms-5">Drinks</h4>
+            </a>
+        </div>
+        <div class="ms-5" (click)=" filterProducts('4')" >
+            <a >
+                <!-- <img class="w-25" src="https://i.postimg.cc/yYbtNGNv/all-products-s.webp"alt=""> -->
+                <br>
+                <h4 id ="k7" style="text-decoration: none;color: black;"class="text-center  mt-2 ms-5">Sweets</h4>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+    
+            <div *ngFor ="let i of  filterData | search :searchData:'productName'" class="col mb-5">
+                <div id ="d" class="card h-100">
+                    <!-- Product image-->
+                    <img style="height:100px;" class="card-img-top" src="{{i.productImage}}" alt="..." />
+                    <!-- Product details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <!-- Product name-->
+                            <h5 class="fw-bolder">{{i.productName}}</h5>
+                            <!-- Product reviews-->
+                            <div class="d-flex justify-content-center small text-warning mb-2">
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                                <div class="bi-star-fill"></div>
+                            </div>
+                            <!-- Product price-->
+                            {{i.price}} Rs
+                        </div>
+                    </div>
+                    <!-- Product actions-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="product/view/{{i.id}}">View</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

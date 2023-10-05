@@ -1,0 +1,37 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Burger",
+      "price": "349",
+      "productImage": "https://i.postimg.cc/85S1bkTK/burger.jpg",
+      "isAvailable": true,
+      "review": 100,
+      "descript": "hiiooo",
+      "rating": 5,
+      "categoryId": 2
+    },
+    {
+      "id": 2,
+      "productName": "french fries ",
+      "price": 344,
+      "productImage": "https://i.postimg.cc/nL7d3LnQ/COVER-1-1-scaled.jpg",
+      "isAvailable": true,
+      "review": 100,
+      "descript": "hiiooo",
+      "rating": 5,
+      "categoryId": 2
+    },
+    {
+      "id": 3,
+      "productName": "juice ",
+      "price": 3494,
+      "productImage": "https://i.postimg.cc/SRT8FyLf/3749033-b30c69279d9341468bb4cf5dab18c578.jpg",
+      "isAvailable": true,
+      "review": 100,
+      "descript": "hiiooo",
+      "rating": 5,
+      "categoryId": 3
+    }
+  ]
+}
